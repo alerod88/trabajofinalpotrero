@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/219678fcf3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap" rel="stylesheet">
+    <title>Cruz del Sur</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="index.html"><img src="public/img/logo.png" alt="Logo"></a>
+        </div>
+        <button class="header_icono" type="button" name="button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="header__navigation">
+            <ul>
+                <li><a class="navigation_link" href="#us">Nosotros</a></li>
+                <li><a class="navigation_link" href="#servicios">Servicios</a></li>
+                <li><a class="navigation_link" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="banner">
+        <div id="carouselExampleControls" class="banner__carousel carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="public/img/fotos/camion1.jpg" class="d-block w-100" alt="camion">
+              </div>
+              <div class="carousel-item">
+                <img src="public/img/fotos/camion2.jpg" class="d-block w-100" alt="camion">
+              </div>
+              <div class="carousel-item">
+                <img src="public/img/fotos/camion3.jpg" class="d-block w-100" alt="camion">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="banner__titulo">
+            <h1>CRUZ DEL SUR</h1>
+        </div>
+    </section>
+
+    <main>
+        <section id="us">
+            <h2 class="main__section__title">NOSOTROS</h2>
+            <p>Como operador logístico, sabemos que es fundamental la alianza que establecemos con cada uno de nuestros clientes: la tercerización de las operaciones optimiza los procesos y potencia la productividad de los negocios involucrados. Cada vez son más los desafíos, y es necesario acompañarlos con dedicación y compromiso.</p>
+        </section>
+        <section id="servicios">
+            <h2 class="main__section__title">SERVICIOS</h2>
+            <div class="main__section__servicios">
+                <i class="section__icon fa-solid fa-truck-front"></i>
+                <h3>Recibi tu mercaderia en tiempo y forma.</h3>
+            </div>
+            <div class="main__section__servicios">
+                <i class="section__icon fa-solid fa-mountain-city"></i>
+                <h3>Llegamos a toda la Patagonia Argentina.</h3>
+            </div>
+            <div class="main__section__servicios">
+                <i class="section__icon fa-solid fa-truck"></i>
+                <h3>Entregas y Retiros puerta a puerta.</h3>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2 class="main__section__title">CONTACTO</h2>
+            <form class="main__form">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nombre:</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Teléfono:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">E-Mail:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="validationTextarea" class="form-label">Consulta:</label>
+                    <textarea class="form-control" id="validationTextarea"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-light">Enviar</button>
+              </form>
+            <div class="main__section__servicios">
+                <i class="contacto__image fa-solid fa-phone"></i>
+                <h3 class="contacto__title"><a href="tel:1144806666">(011)4480-6666</a></h3>
+            </div>
+            <div class="main__section__servicios">
+                <i class="contacto__image fa-solid fa-envelope"></i>
+                <h3 class="contacto__title"><a href="mailto:info@cruzdelsur.com.ar">info@cruzdelsur.com.ar</a></h3>
+            </div>
+            <div class="main__section__servicios">
+                <i class="contacto__image fa-solid fa-location-dot"></i>
+                <h3 class="contacto__title"><a href="https://goo.gl/maps/hWe9aeSNSvWC71vz9">Autopista Ricchieri y Boulogne Sur Mer</a></h3>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <span>Todos los derechos reservados para Cruz del Sur 2022</span>
+    </footer>
+    <script src="public/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
